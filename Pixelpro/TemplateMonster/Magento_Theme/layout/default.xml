@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="header.panel.wrapper" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <move element="header" destination="header-wrapper" before="minicart-wrapper"/>
+        <referenceContainer name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links-2">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="secure-shipping-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Secure shipping</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="affiliates-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Affiliates</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="group-sales-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Group sales</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links-3">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">footer links</argument>
+                </arguments>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="wish-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">My wishlist</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="track-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Track my order</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Help</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+                
+    </body>
+</page>
