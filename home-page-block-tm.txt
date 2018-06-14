@@ -1,0 +1,24 @@
+<div class="blocks-promo">
+	<a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/home_ok_02.jpg"}}" alt="" /></a>
+	<a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/home_ok_03.jpg"}}" alt="" /> </a>
+</div>
+<div class="blocks-promo">
+	<a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/home_ok_04.jpg"}}" alt="" /></a>
+	<a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"> <img src="{{view url="images/home_ok_05.jpg"}}" alt="" /> </a>
+</div>
+
+<p>{{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="all_products" products_count="3" template="product/widget/new/content/new_grid.phtml"}}</p>
+
+<div class="blocks-promo">
+	<a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/home_ok_07.jpg"}}" alt="" /></a>
+	<a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"> <img src="{{view url="images/home_ok_08.jpg"}}" alt="" /></a>
+</div>
+<div id="newsletter-wrapper">
+	<p id="newsletter-title">NEWSLETTER</p>
+	<p id="newsletter-text">Subscribe to our newsletter</p>
+	<p>{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</p>
+</div>
+<div class="blocks-promo">
+	<a class="block-promo home-main" href="{{store url=""}}collections/yoga-new.html"><img src="{{view url="images/home_ok_10.jpg"}}" alt="" /></a>
+	<a class=" block-promo home-main" href="{{store url=""}}collections/yoga-new.html"> <img src="{{view url="images/home_ok_11.jpg"}}" alt="" /></a>
+</div>
