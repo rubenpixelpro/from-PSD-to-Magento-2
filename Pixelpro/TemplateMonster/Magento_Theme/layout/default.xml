@@ -11,7 +11,7 @@
         <referenceBlock name="header.panel.wrapper" remove="true"/>
         <referenceBlock name="form.subscribe" remove="true"/>
         <move element="header" destination="header-wrapper" before="minicart-wrapper"/>
-        <referenceContainer name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+        <referenceContainer name="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
             <block class="Magento\Framework\View\Element\Html\Links" name="footer_links-2">
                 <arguments>
                     <argument name="css_class" xsi:type="string">footer links</argument>
